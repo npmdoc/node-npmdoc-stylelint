@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.stylelint">
+            function <span class="apidocSignatureSpan"></span>stylelint
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.stylelint.createLinter">
             function <span class="apidocSignatureSpan">stylelint.</span>createLinter
             <span class="apidocSignatureSpan">(options)</span>
@@ -93,6 +102,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.stylelint.lint">
             function <span class="apidocSignatureSpan">stylelint.</span>lint
             <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin">
+            function <span class="apidocSignatureSpan">stylelint.</span>postcssPlugin
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -180,6 +198,82 @@
             function <span class="apidocSignatureSpan">stylelint.formatters.</span>verbose
             <span class="apidocSignatureSpan">(results)</span>
             </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stylelint.postcssPlugin">module stylelint.postcssPlugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin.postcssPlugin">
+            function <span class="apidocSignatureSpan">stylelint.</span>postcssPlugin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin.createLinter">
+            function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>createLinter
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin.createPlugin">
+            function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>createPlugin
+            <span class="apidocSignatureSpan">(ruleName, rule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin.createRuleTester">
+            function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>createRuleTester
+            <span class="apidocSignatureSpan">(equalityCheck)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin.lint">
+            function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>lint
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylelint.postcssPlugin.process">
+            function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>process
+            <span class="apidocSignatureSpan">(root, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>formatters</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>rules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>utils</span>
 
         </li>
 
@@ -1811,6 +1905,24 @@
 
 
     <h2>
+        <a href="#apidoc.element.stylelint.stylelint" id="apidoc.element.stylelint.stylelint">
+        function <span class="apidocSignatureSpan"></span>stylelint
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.stylelint.createLinter" id="apidoc.element.stylelint.createLinter">
         function <span class="apidocSignatureSpan">stylelint.</span>createLinter
         <span class="apidocSignatureSpan">(options)</span>
@@ -2039,6 +2151,24 @@
 
 
     <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin" id="apidoc.element.stylelint.postcssPlugin">
+        function <span class="apidocSignatureSpan">stylelint.</span>postcssPlugin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.stylelint.process" id="apidoc.element.stylelint.process">
         function <span class="apidocSignatureSpan">stylelint.</span>process
         <span class="apidocSignatureSpan">(root, opts)</span>
@@ -2252,6 +2382,294 @@ function readFile(filePath/*: string*/)/*: Promise&#x3c;string&#x3e;*/ {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stylelint.postcssPlugin" id="apidoc.module.stylelint.postcssPlugin">module stylelint.postcssPlugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin.postcssPlugin" id="apidoc.element.stylelint.postcssPlugin.postcssPlugin">
+        function <span class="apidocSignatureSpan">stylelint.</span>postcssPlugin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin.createLinter" id="apidoc.element.stylelint.postcssPlugin.createLinter">
+        function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>createLinter
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createLinter = function (options)/*: stylelint$internalApi*/ {
+  options = options || {}
+  const stylelint/*: Object*/ = { _options: options }
+
+  // Two separate explorers so they can each have their own transform
+  // function whose results are cached by cosmiconfig
+  stylelint._fullExplorer = cosmiconfig(&#x22;stylelint&#x22;, {
+    argv: false,
+    rcExtensions: true,
+    transform: _.partial(augmentConfig.augmentConfigFull, stylelint),
+  })
+  stylelint._extendExplorer = cosmiconfig(null, {
+    argv: false,
+    transform: _.partial(augmentConfig.augmentConfigExtended, stylelint),
+  })
+
+  stylelint._specifiedConfigCache = new Map()
+  stylelint._postcssResultCache = new Map()
+  stylelint._createStylelintResult = _.partial(createStylelintResult, stylelint)
+  stylelint._getPostcssResult = _.partial(getPostcssResult, stylelint)
+  stylelint._lintSource = _.partial(lintSource, stylelint)
+
+  stylelint.getConfigForFile = _.partial(getConfigForFile, stylelint)
+  stylelint.isPathIgnored = _.partial(isPathIgnored, stylelint)
+
+  return stylelint
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin.createPlugin" id="apidoc.element.stylelint.postcssPlugin.createPlugin">
+        function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>createPlugin
+        <span class="apidocSignatureSpan">(ruleName, rule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createPlugin = function (ruleName, rule) {
+  return {
+    ruleName,
+    rule,
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin.createRuleTester" id="apidoc.element.stylelint.postcssPlugin.createRuleTester">
+        function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>createRuleTester
+        <span class="apidocSignatureSpan">(equalityCheck)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createRuleTester = function (equalityCheck) {
+  return function (rule, schema) {
+    const alreadyHadOnlyTest = !!onlyTest
+    if (schema.accept) {
+      schema.accept.forEach(_.partial(checkCaseForOnly, &#x22;accept&#x22;))
+    }
+
+    if (schema.reject) {
+      schema.reject.forEach(_.partial(checkCaseForOnly, &#x22;reject&#x22;))
+    }
+
+    if (onlyTest) {
+      schema = _.assign(_.omit(schema, [ &#x22;accept&#x22;, &#x22;reject&#x22; ]), {
+        skipBasicChecks: true,
+        [onlyTest.type]: [onlyTest.case],
+      })
+    }
+
+    if (!alreadyHadOnlyTest) {
+      process.nextTick(() =&#x3e; {
+        processGroup(rule, schema, equalityCheck)
+      })
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin.lint" id="apidoc.element.stylelint.postcssPlugin.lint">
+        function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>lint
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lint = function (options)/*: Promise&#x3c;stylelint$standaloneReturnValue&#x3e;*/ {
+  const files = options.files
+  const code = options.code
+  const codeFilename = options.codeFilename
+  const config = options.config
+  const configFile = options.configFile
+  const configBasedir = options.configBasedir
+  const configOverrides = options.configOverrides
+  const ignoreDisables = options.ignoreDisables
+  const ignorePath = options.ignorePath
+  const reportNeedlessDisables = options.reportNeedlessDisables
+  const formatter = options.formatter
+  const syntax = options.syntax
+  const customSyntax = options.customSyntax
+  const allowEmptyInput = options.allowEmptyInput
+  const cacheLocation = options.cacheLocation
+  const useCache = options.cache || false
+  let fileCache
+
+  const startTime = Date.now()
+
+  const isValidCode = typeof code === &#x22;string&#x22;
+  if (!files &#x26;&#x26; !isValidCode || files &#x26;&#x26; (code || isValidCode)) {
+    throw new Error(&#x22;You must pass stylelint a `files` glob or a `code` string, though not both&#x22;)
+  }
+
+  let formatterFunction
+  if (typeof formatter === &#x22;string&#x22;) {
+    formatterFunction = formatters[formatter]
+    if (formatterFunction === undefined) {
+      return Promise.reject(new Error(&#x22;You must use a valid formatter option: &#x27;json&#x27;, &#x27;string&#x27;, &#x27;verbose&#x27;, or a function&#x22;))
+    }
+  } else if (typeof formatter === &#x22;function&#x22;) {
+    formatterFunction = formatter
+  } else {
+    formatterFunction = formatters.json
+  }
+
+  const stylelint = createStylelint({
+    config,
+    configFile,
+    configBasedir,
+    configOverrides,
+    ignoreDisables,
+    ignorePath,
+    reportNeedlessDisables,
+    syntax,
+    customSyntax,
+  })
+
+  if (!files) {
+    const absoluteCodeFilename = (codeFilename !== undefined &#x26;&#x26; !path.isAbsolute(codeFilename))
+      ? path.join(process.cwd(), codeFilename)
+      : codeFilename
+    return stylelint._lintSource({
+      code,
+      codeFilename: absoluteCodeFilename,
+    }).then(postcssResult =&#x3e; {
+      return stylelint._createStylelintResult(postcssResult)
+    }).catch(handleError).then(stylelintResult =&#x3e; {
+      return prepareReturnValue([stylelintResult])
+    })
+  }
+
+  let fileList = files
+  if (typeof fileList === &#x22;string&#x22;) {
+    fileList = [fileList]
+  }
+  fileList = fileList.concat(
+    alwaysIgnoredGlobs.map(file =&#x3e; &#x22;!&#x22; + file)
+  )
+
+  if (useCache) {
+    const stylelintVersion = pkg.version
+    const hashOfConfig = hash(`${stylelintVersion}_${JSON.stringify(config)}`)
+    fileCache = new FileCache(cacheLocation, hashOfConfig)
+  } else {
+    // No need to calculate hash here, we just want to delete cache file.
+    fileCache = new FileCache(cacheLocation)
+    // Remove cache file if cache option is disabled
+    fileCache.destroy()
+  }
+
+  return globby(fileList).then(filePaths =&#x3e; {
+    if (!filePaths.length) {
+      if (allowEmptyInput === undefined || !allowEmptyInput) {
+        const message = (files =&#x3e; {
+          if (typeof files === &#x22;string&#x22;) {
+            return `${files} does`
+          }
+          // seperate files into last (last file) and initial) all the others
+          const initial = files.slice(0)
+          const last = initial.pop()
+          // join into a comma seperated string of file names
+          const ending = (files.length &#x3e; 1 ? `and ${last} do` : `${last} does`)
+          return `${initial.join(&#x22;, &#x22;)} ${ending}`.trim()
+        })(files) + &#x22; not match any files&#x22;
+
+        const err/*: Object*/ = new Error(message)
+        err.code = 80
+        throw err
+      } else {
+        return Promise.all([])
+      }
+    }
+
+    let absoluteFilePaths = filePaths.map(filePath =&#x3e; {
+      const absoluteFilepath = (!path.isAbsolute(filePath))
+        ? path.join(process.cwd(), filePath)
+        : path.normalize(filePath)
+      return absoluteFilepath
+    })
+
+    if (useCache) {
+      absoluteFilePaths = absoluteFilePaths.filter(fileCache.hasFileChanged.bind(fileCache))
+    }
+
+    const getStylelintResults = absoluteFilePaths.map(absoluteFilepath =&#x3e; {
+      debug(`Processing ${absoluteFilepath}`)
+      return stylelint._lintSource({
+        filePath: absoluteFilepath,
+      } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylelint.postcssPlugin.process" id="apidoc.element.stylelint.postcssPlugin.process">
+        function <span class="apidocSignatureSpan">stylelint.postcssPlugin.</span>process
+        <span class="apidocSignatureSpan">(root, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (root, opts) {
+  return postcss([creator(opts)]).process(root, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    let preProcessedCode = code
+    if (options.codeProcessors) {
+      options.codeProcessors.forEach(codeProcessor =&#x3e; {
+        preProcessedCode = codeProcessor(preProcessedCode, source)
+      })
+    }
+
+    return postcssProcessor.<span class="apidocCodeKeywordSpan">process</span>(preProcessedCode, postcssOptions)
+  }).then(postcssResult =&#x3e; {
+    stylelint._postcssResultCache.set(options.filePath, postcssResult)
+    return postcssResult
+  })
+}
+
+function readFile(filePath/*: string*/)/*: Promise&#x3c;string&#x3e;*/ {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
 
 
 </div>
